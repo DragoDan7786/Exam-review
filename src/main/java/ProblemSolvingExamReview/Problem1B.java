@@ -11,4 +11,13 @@ package ProblemSolvingExamReview;
  */
 public class Problem1B {
     
+    public static void multiplesOfFive(int n){
+        n = n-n%5;
+        if(n>0) multiplesOfFive(n-5);
+        System.out.println(n);
+    }
+    
+    public static void main(String args[]){
+        multiplesOfFive(60);
+    }
 }
